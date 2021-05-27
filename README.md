@@ -21,3 +21,4 @@ java -jar StateInfoApi-1.0-SNAPSHOT-exec.jar
 localhost:8070/status
 localhost:8070/getAll
 localhost:8070/getStateByName?stateName=North Carolina
+localhost:8070/getStateByName?stateName=Arizona
