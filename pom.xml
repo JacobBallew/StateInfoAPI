@@ -18,8 +18,8 @@
 
 	<scm>
 		<connection>scm:git:https://github.com/JacobBallew/StateInfoAPI.git</connection>
-		<url>https://github.com/JacobBallew/StateInfoAPI</url>
 		<developerConnection>scm:git:https://github.com/JacobBallew/StateInfoAPI.git</developerConnection>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
