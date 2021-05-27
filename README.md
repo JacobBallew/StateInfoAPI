@@ -1,6 +1,6 @@
 # StateInfo API
 
-StateInfo API is a RESTful api for testing and integration.  
+StateInfo API is a REST api for testing and integration.  
 Many projects require or integrate with API's - StateInfo API provides a simple and easy way to test and develop.  
 \
 This API provides data for each US state.
