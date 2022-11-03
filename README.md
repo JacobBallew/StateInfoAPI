@@ -1,11 +1,10 @@
 # StateInfo API
 
-StateInfo API is a REST api for testing and integration.  
-Many projects require or integrate with API's - StateInfo API provides a simple and easy way to test and develop.  
+StateInfo API is a Spring based REST API for general testing and integration.  
+Many projects require or integrate with API's - StateInfo API is intended to provide useful endpoints for testing with, while also providing data that is more than simply "dummy" data.   
 \
-This API provides data for each US state.
-\
-Runs on port <b>8070</b> to avoid conflicts
+This API provides data for each US state
+
 ## Setup
 Build
 ```shell script
@@ -15,10 +14,21 @@ Start
 ```shell script
 java -jar StateInfoApi-1.0-SNAPSHOT-exec.jar
 ```
-## Example End Points
 
-```python
-localhost:8070/status
-localhost:8070/getAll
-localhost:8070/getStateByName?stateName=North Carolina
-localhost:8070/getStateByName?stateName=Arizona
+## Swagger
+host:8080/swagger-ui/index.html#/
+
+## End Points
+
+### State Controller
+```
+Get all states
+/api/v1/states
+
+Get state by name (case in-sensitive)
+/api/v1/states?name=Alaska
+```
+### Debug Controller
+```
+Get all states
+/status

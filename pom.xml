@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>com.ballew</groupId>
+	<groupId>com.ballewjacob</groupId>
 	<artifactId>StateInfoApi</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>StateInfoApi</name>
@@ -56,6 +56,17 @@
 			<scope>runtime</scope>
 			<version>2.1.210</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.6.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -70,7 +81,7 @@
 						</goals>
 						<configuration>
 							<classifier>exec</classifier>
-							<mainClass>com.ballew.StateInfoApi.StateInfoApiApplication</mainClass>
+							<mainClass>com.jacobballew.StateInfoApi.StateInfoApiApplication</mainClass>
 						</configuration>
 					</execution>
 				</executions>
