@@ -1,6 +1,6 @@
-package com.ballew.StateInfoApi.misc;
+package com.jacobballew.StateInfoApi.util;
 
-import com.ballew.StateInfoApi.domain.State;
+import com.jacobballew.StateInfoApi.dto.State;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ public class SQLGenerator {
         while (scan.hasNextLine()) {
             String line = scan.nextLine();
             String[] tokens = line.split("\t");
-            states.add(new State(tokens[0], tokens[1], tokens[2], Integer.valueOf(tokens[3]), Integer.valueOf(tokens[4]), tokens[5]));
+            states.add(new State(tokens[0], tokens[1], tokens[2], Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), tokens[5]));
         }
 
         states.forEach(i -> {
