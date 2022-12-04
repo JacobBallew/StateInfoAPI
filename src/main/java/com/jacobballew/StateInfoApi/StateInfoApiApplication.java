@@ -12,9 +12,8 @@ public class StateInfoApiApplication implements ApplicationRunner {
     public static void main(String[] args) {
         SpringApplication.run(StateInfoApiApplication.class, args);
     }
-
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        log.info("StateInfo API stated!");
+        log.info("StateInfo API started!");
     }
 }
